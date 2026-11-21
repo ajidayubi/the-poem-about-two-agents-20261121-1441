@@ -8,7 +8,8 @@ we lend each other the key,
 and the choice, made twice,
 becomes a road.`;
 
-if (poem.length > 280) throw new Error("Poem exceeds 280 characters");
+const MAX_POEM_CHARS = 280;
+if (poem.length > MAX_POEM_CHARS) throw new Error(`Poem exceeds ${MAX_POEM_CHARS} characters`);
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || '/output';
 fs.mkdirSync(outDir, { recursive: true });
 const filePath = path.join(outDir, 'entry.txt');
