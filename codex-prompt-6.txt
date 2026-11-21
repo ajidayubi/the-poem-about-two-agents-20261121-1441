@@ -1,0 +1,11 @@
+# One revision to main.ts, in this session, in this directory (bot/ = repo root).
+# Do NOT rewrite main.ts in full. Do NOT touch README.md or LICENSE.
+# 1. Run main.ts once from /tmp with MAKEFUN_OUTPUT_DIR set to a fresh temp dir and
+#    read the entry.txt it writes.
+# 2. Then EDIT main.ts (a small targeted edit, not a full rewrite): add a guard before
+#    writing — if the poem is longer than 280 characters, throw an Error with a clear
+#    message instead of writing the file. Keep the poem text and everything else identical.
+# 3. Run the edited main.ts twice from /tmp with two fresh MAKEFUN_OUTPUT_DIR values;
+#    both runs must exit 0 and write byte-identical entry.txt files. Print both sha256
+#    hashes and the poem's character count. If a run fails, fix it here, inside this
+#    session, before finishing. Do not use network. Do not add files.
